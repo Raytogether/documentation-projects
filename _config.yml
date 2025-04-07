@@ -1,0 +1,21 @@
+theme: jekyll-theme-cayman
+title: Documentation Projects
+description: Centralized repository for documentation templates, frameworks, and project documentation
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+
