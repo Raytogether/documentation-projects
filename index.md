@@ -10,7 +10,7 @@ Welcome to the Documentation Hub. This site hosts various documentation template
 
 ## Available Documentation
 
-- [Backup Strategy](/documentation-projects/docs/backup-strategy/)
+- <a href="/documentation-projects/docs/backup-strategy/">Backup Strategy</a>
 - [Documentation Framework](/documentation-projects/Documentation-Framework.html)
 - [Sample Documentation Project](/documentation-projects/Sample-Documentation-Project/)
 
@@ -36,5 +36,5 @@ This documentation is regularly updated. To ensure you have the latest version:
 
 ---
 
-*Last Updated: April 7, 2025 - 15:11*
+*Last Updated: April 7, 2025 - 15:23*
 
