@@ -1,4 +1,4 @@
-# Warp AI Session - {%DATE%}
+# Warp AI Session - <DATE>
 
 ## Session Topic
 [Brief description of session purpose]
@@ -30,6 +30,6 @@
 - `~/path/to/relevant/file`
 
 ## Session Info
-Saved: {%TIME%}
+Saved: <TIME>
 Location: ~/Documents/warp-ai-sessions/
 
