@@ -29,9 +29,9 @@ Required sections are in session-template.md:
 
 1. Adding new section:
 ```markdown
-## Environment
-- OS: {%OS%}
-- Shell: {%SHELL%}
+- OS: {{OS}}
+- Shell: {{SHELL}}
+```
 ```
 
 2. Changing date format:
