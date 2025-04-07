@@ -20,9 +20,7 @@ Resources related to the Warp terminal application:
 
 Information about backup strategies and tools:
 
-- [Backup Strategy](./backup/strategy/) - Overall approach to data backup and preservation
-- [Borg Research](./backup/borg/) - Notes and documentation on using Borg Backup
-- [Cloud Backup Research](./backup/cloud/) - Findings on cloud-based backup solutions
+- [Backup Strategy](./backup-strategy/) - Overall approach to data backup and preservation
 
 ## Learning Resources
 
