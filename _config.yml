@@ -1,3 +1,6 @@
+source: docs
+baseurl: "/documentation-projects"
+url: "https://raytogether.github.io"
 theme: jekyll-theme-cayman
 title: Documentation Projects
 description: Centralized repository for documentation templates, frameworks, and project documentation
