@@ -1,3 +1,9 @@
+---
+layout: default
+title: Comprehensive Backup Strategy
+description: A detailed guide to our multi-layered backup approach with Duplicity, Borg, and cloud storage solutions
+---
+
 # Comprehensive Backup Strategy
 
 <!--
