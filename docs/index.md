@@ -10,7 +10,7 @@ Welcome to my personal documentation hub! This site contains a collection of gui
 
 ## Available Documentation
 
-- [Backup Strategy](./backup-strategy/) - Overall approach to data backup and preservation
+- [Backup Strategy](/documentation-projects/docs/backup-strategy/) - Overall approach to data backup and preservation
 - [Documentation Framework](/documentation-projects/Documentation-Framework.html) - Framework for creating consistent documentation
 - [Sample Documentation Project](/documentation-projects/Sample-Documentation-Project/) - Example documentation structure
 
