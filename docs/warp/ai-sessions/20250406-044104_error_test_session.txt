@@ -1,0 +1,47 @@
+# Warp AI Session Recording
+# Date: 2025-04-06 04:41:04
+# Title: error_test_session
+# ------------------------------------------
+
+Script started on 2025-04-06 04:41:04-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="128" LINES="38"]
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m ls
+[?2004l[0m[01;32mwarp-ai.sh[0m
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m ll ~
+[?2004ltotal 32
+drwxr-xr-x. 1 donaldtanner donaldtanner   12 Apr  4 13:56 [0m[01;34mApplications[0m
+drwx------. 1 donaldtanner donaldtanner    0 Apr  3 15:31 [01;34maudio-projects[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   42 Apr  6 00:01 [01;34mbackup-restore-test[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner  318 Apr  5 23:13 [01;34mbackup-scripts[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   88 Apr  6 00:19 [01;34mbackup-test[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   78 Apr  6 04:25 [01;34mbin[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   66 Apr  6 00:41 [01;34mborg-cli-test[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   62 Apr  6 01:14 [01;34mcode[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner    0 Apr  4 01:38 [01;34mDesktop[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner  328 Apr  6 02:39 [01;34mDocuments[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner  800 Apr  5 20:54 [01;34mDownloads[0m
+drwx------. 1 donaldtanner donaldtanner 1266 Apr  5 22:53 [01;34mDropbox[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner  104 Apr  4 02:15 [01;34mduplicacy-cli-dropbox[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner  694 Apr  3 01:57 [01;34mExodus-linux-x64[0m
+-rwxr-xr-x. 1 donaldtanner donaldtanner 2108 Apr  5 15:54 [01;32mgenerate_backup_gpg_key.sh[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   30 Apr  6 01:02 [01;34mlogs[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner  258 Apr  2 03:54 [01;34mmacfanctld[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner    0 Apr  1 21:23 [01;34mMusic[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   10 Apr  4 19:36 [01;34mNotebooks[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   34 Apr  3 14:15 [01;34mPictures[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner    0 Apr  1 21:23 [01;34mPublic[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner    0 Apr  6 01:12 [01;34mscripts[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner  228 Apr  4 19:40 [01;34mSync[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner    0 Apr  1 21:23 [01;34mTemplates[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   98 Apr  6 01:07 [01;34mtest-backup[0m
+-rw-------. 1 donaldtanner donaldtanner  553 Apr  6 00:10 test-backup.key
+-rw-r--r--. 1 donaldtanner donaldtanner   38 Apr  6 00:21 test-backup.url
+-rwxr-xr-x. 1 donaldtanner donaldtanner  844 Apr  6 01:47 [01;32mtest-ssh.sh[0m
+-rw-r--r--. 1 donaldtanner donaldtanner 1025 Apr  4 23:16 Tilix-Session-Tanner-1.json
+-rw-r--r--. 1 donaldtanner donaldtanner 1272 Apr  2 15:38 timeshift-gtk.desktop.original
+drwxr-xr-x. 1 donaldtanner donaldtanner   28 Apr  5 00:26 [01;34mtmp[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   12 Apr  2 00:01 [01;34mVideos[0m
+drwxr-xr-x. 1 donaldtanner donaldtanner   20 Apr  5 22:56 [01;34mwarp-ai-sessions[0m
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m exit
+[?2004lexit
+
+Script done on 2025-04-06 04:41:26-05:00 [COMMAND_EXIT_CODE="0"]

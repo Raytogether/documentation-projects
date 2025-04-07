@@ -1,0 +1,15 @@
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Git Journey Documentation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This documentation provides an overview of the Git and Borg backup implementation for code projects. It covers the setup, configuration, and best practices for maintaining a robust code backup system.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Contents\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b git-journey.md}: Detailed implementation guide covering the entire setup process\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b backup-YYYYMMDD/}: Backup copies of the documentation\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Quick Reference\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Git Repositories\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Local repositories are stored in {\f1 ~/code/} with remote copies on GitHub.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Borg Backup Repository\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Borg backups are stored in {\f1 ~/borg-repos/code-backup/} with automated daily backups.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Backup Scripts\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 ~/code/backup_code.sh}: Main backup script that runs daily at 1:00 AM\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 ~/code/setup_github_repos.sh}: Script used to set up GitHub repositories\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Usage\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Refer to {\f1 git-journey.md} for detailed instructions on how to use and maintain your code backup system.\par}

@@ -1,0 +1,67 @@
+# Cloud Backup Feature Comparison
+
+## Storage and Capacity
+
+### Wasabi
+
+-   Minimum Storage: 1TB
+-   Maximum: Unlimited
+-   Deduplication: Available through third-party tools
+-   Encryption: AES 256-bit at rest and in transit
+-   Backup Scheduling: Through third-party tools
+-   File Versioning: Yes (Object versioning)
+
+### SpiderOak One
+
+-   Minimum Storage: 150GB
+-   Maximum: 5TB
+-   Deduplication: Yes (built-in)
+-   Encryption: AES 256-bit, end-to-end
+-   Backup Scheduling: Yes (built-in)
+-   File Versioning: Yes (unlimited)
+
+### pCloud
+
+-   Minimum Storage: 500GB
+-   Maximum: 2TB (Premium)
+-   Deduplication: Yes (built-in)
+-   Encryption: TLS/SSL for transfer, AES 256-bit for storage
+-   Backup Scheduling: Yes (built-in)
+-   File Versioning: Yes (30-day history)
+
+### Code42 CrashPlan
+
+-   Minimum Storage: Unlimited
+-   Maximum: Unlimited
+-   Deduplication: Yes (built-in)
+-   Encryption: AES 256-bit with custom key option
+-   Backup Scheduling: Yes (built-in, customizable)
+-   File Versioning: Yes (customizable retention)
+
+## Feature Analysis
+
+1.  Storage Requirements (\>1TB):
+    -   All providers meet the minimum requirement
+    -   CrashPlan and Wasabi offer unlimited storage
+    -   SpiderOak and pCloud have upper limits
+2.  Data Deduplication:
+    -   Built-in: SpiderOak, pCloud, CrashPlan
+    -   Third-party required: Wasabi
+3.  Encryption Standards:
+    -   All providers offer industry-standard AES 256-bit encryption
+    -   SpiderOak offers zero-knowledge encryption
+    -   All use TLS/SSL for data transmission
+4.  Backup Features:
+    -   Automatic scheduling available on all except Wasabi (needs
+        third-party)
+    -   File versioning supported by all providers
+    -   CrashPlan offers most flexible retention policies
+
+## Initial Recommendations
+
+Based on feature requirements: 1. SpiderOak One - Best for
+security-focused users 2. CrashPlan - Best for unlimited storage needs
+3. pCloud - Best for general-purpose backup 4. Wasabi - Best for
+cost-effective storage but requires additional tools
+
+Next Steps: Proceed to Linux Integration Testing

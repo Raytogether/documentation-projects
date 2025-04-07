@@ -1,0 +1,15 @@
+# Warp AI Session Recording
+# Date: 2025-04-05 23:16:31
+# Title: Optional session title
+# ------------------------------------------
+
+Script started on 2025-04-05 23:16:31-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="-1" LINES="-1"]
+]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m 
+[?2004l]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m ^C[?2004l[?2004h[?2004l
+]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m [K[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m [K[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m 
+[?2004l]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m ^C[?2004l[?2004h[?2004l
+]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m [K[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m [K[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m 
+[?2004l]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m 
+[?2004l]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m ^C[?2004l[?2004h[?2004l
+]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m qhh~/bin/warp-ai help[4Pwarp-ai --helpmkdir -p ~/bin && ln -sf ~/code/warp-ai/warp-ai.sh ~/bin/warp-ai[K[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m mkdir -p ~/bin && ln -sf ~/code/warp-ai/warp-ai.sh ~/bin/warp-ai[K[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m mkdir -p ~/bin && ln -sf ~/code/warp-ai/warp-ai.sh ~/bin/warp-ai
+Script done on 2025-04-05 23:28:59-05:00 [COMMAND_EXIT_CODE="137"]

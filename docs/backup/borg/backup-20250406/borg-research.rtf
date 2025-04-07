@@ -1,0 +1,202 @@
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Borg Backup: Comprehensive Guide\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Table of Contents\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#introduction"}}{\fldrslt{\ul
+Introduction
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#installation"}}{\fldrslt{\ul
+Installation
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#basic-concepts"}}{\fldrslt{\ul
+Basic Concepts
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#command-line-usage"}}{\fldrslt{\ul
+Command Line Usage
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#vorta-gui-usage"}}{\fldrslt{\ul
+Vorta GUI Usage
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#best-practices"}}{\fldrslt{\ul
+Best Practices
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#remote-backup-options"}}{\fldrslt{\ul
+Remote Backup Options
+}}}
+\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\field{\*\fldinst{HYPERLINK "#troubleshooting"}}{\fldrslt{\ul
+Troubleshooting
+}}}
+\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Introduction\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Borg is a deduplicating backup program that supports compression and encryption. It is designed to be efficient with large data sets and provides backup, restore, and archive management functionality.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Key features: - Deduplication (saves space by storing identical data only once) - Compression - Encryption - Incremental backups - Mountable backups (can browse like a filesystem) - Backup verification - Client-server architecture for remote backups\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Installation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Linux\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 # Fedora\line
+sudo dnf install borgbackup\line
+\line
+# Ubuntu/Debian\line
+sudo apt install borgbackup\line
+\line
+# Arch Linux\line
+sudo pacman -S borg\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 macOS\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 brew install borgbackup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Windows\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Use WSL (Windows Subsystem for Linux)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Or use the experimental Windows port\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Vorta GUI Installation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 # Fedora\line
+sudo dnf install vorta\line
+\line
+# Ubuntu/Debian\line
+sudo apt install vorta\line
+\line
+# macOS\line
+brew install vorta\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Basic Concepts\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Repositories\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 A Borg repository is a storage location where your backup archives are stored.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 # Initialize a new repository\line
+borg init --encryption=repokey /path/to/repo\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Archives\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Each backup operation creates a new archive in the repository.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 # Create an archive\line
+borg create /path/to/repo::archive-name /path/to/backup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Encryption\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Borg supports several encryption modes: - {\f1 none} - No encryption - {\f1 repokey} - Encryption with key stored in repository - {\f1 keyfile} - Encryption with key stored in a separate file - {\f1 repokey-blake2} and {\f1 keyfile-blake2} - Newer variants with improved hashing\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Deduplication\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Borg automatically deduplicates data by: - Breaking files into chunks - Storing identical chunks only once - Referencing existing chunks for duplicated data\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Command Line Usage\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Repository Management\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Create a repository\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg init --encryption=repokey ~/backup-repo\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Check repository health\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg check ~/backup-repo\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Backup Operations\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Create a backup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg create --progress --stats ~/backup-repo::archive-name ~/Documents\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 List all archives\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg list ~/backup-repo\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Show archive info\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg info ~/backup-repo::archive-name\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 List archive contents\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg list --format="\{mode\} \{user:6\} \{group:6\} \{size:8d\} \{isomtime\} \{path\}\{extra\}\{NL\}" ~/backup-repo::archive-name\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Restore Operations\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Extract specific files\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg extract ~/backup-repo::archive-name path/to/file\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Extract entire archive\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg extract ~/backup-repo::archive-name\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Mount an archive (browse like a filesystem)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 mkdir ~/mount-point\line
+borg mount ~/backup-repo::archive-name ~/mount-point\line
+# When done\line
+borg umount ~/mount-point\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Archive Management\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Delete an archive\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg delete ~/backup-repo::archive-name\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Prune archives according to retention policy\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 borg prune --keep-daily 7 --keep-weekly 4 --keep-monthly 6 ~/backup-repo\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Vorta GUI Usage\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Vorta is a desktop backup client for Borg that provides a user-friendly GUI.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Setting Up Repositories\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Launch Vorta\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Click \u8220"Add\u8221" button in the Repository tab\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Choose a repository mode:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Create new repository\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Use existing repository\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Set encryption type (recommended: repokey)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 5.\tx360\tab Set repository location (local or remote)\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Configuring Backups\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Navigate to the \u8220"Sources\u8221" tab\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Add directories to include in backup\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Navigate to the \u8220"Exclude\u8221" tab\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Configure patterns for exclusion\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Common patterns: {\f1 *.pyc}, {\f1 node_modules}, {\f1 .git}, etc.\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Setting Schedule and Retention\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Navigate to the \u8220"Schedule\u8221" tab\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab Set backup frequency (daily, weekly, etc.)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab Navigate to the \u8220"Archive\u8221" tab\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 4.\tx360\tab Configure retention policies:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab How many hourly/daily/weekly/monthly/yearly archives to keep\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Running and Restoring Backups\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Click \u8220"Create Backup Now\u8221" to run a manual backup\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab For restoration:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Navigate to the \u8220"Archives\u8221" tab\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Select the archive to restore from\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Click \u8220"Extract\u8221" and select files/directories to restore\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Best Practices\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Security\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 1.\tx360\tab {\b Strong Passphrase}: Use a strong, unique passphrase for your repository\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 2.\tx360\tab {\b Passphrase Management}: Store your passphrase securely (password manager)\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 3.\tx360\tab {\b Backup Your Key}: Store your encryption key safely:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 borg key export ~/backup-repo key-backup-file\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Backup Strategy\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 1.\tx360\tab {\b 3-2-1 Backup Rule}:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab 3 copies of your data\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab 2 different storage types\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab 1 copy offsite\sa180\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 2.\tx360\tab {\b Regular Testing}: Periodically test restoration to ensure backups are valid:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 borg extract --dry-run ~/backup-repo::archive-name\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 3.\tx360\tab {\b Automation}: Set up scheduled backups:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Use Vorta\u8217's scheduling feature\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Or create a cron job/systemd timer for CLI\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Performance Optimization\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 1.\tx360\tab {\b Compression Levels}: Balance between speed and size:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 # Fast, less compression\line
+borg create --compression lz4 ~/backup-repo::archive-name ~/data\line
+\line
+# Slower, better compression\line
+borg create --compression zstd,3 ~/backup-repo::archive-name ~/data\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 2.\tx360\tab {\b Exclude Patterns}: Exclude unnecessary files to speed up backups:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 borg create --exclude '*.iso' --exclude '*/node_modules' ~/backup-repo::archive-name ~/data\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 3.\tx360\tab {\b Caching}: Use Borg\u8217's cache for better performance:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 export BORG_CACHE_DIR=~/.cache/borg\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Remote Backup Options\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Setting Up Remote Repositories\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Self-Hosted Server\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 # Initialize remote repository\line
+borg init --encryption=repokey user@server.com:/path/to/repo\line
+\line
+# Backup to remote repository\line
+borg create --progress user@server.com:/path/to/repo::archive-name ~/Documents\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Borg-Specific Hosting Services\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab {\b BorgBase}:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Dedicated Borg hosting service\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Web interface for repository management\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Support for SSH keys and 2FA\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab {\b Rsync.net}:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab General purpose storage with Borg support\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Provides shell access and pre-installed Borg\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Bandwidth Considerations\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 For initial backups to remote repositories:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 # Create initial backup locally, then copy\line
+borg init --encryption=repokey ~/temp-repo\line
+borg create ~/temp-repo::initial ~/Documents\line
+rsync -av ~/temp-repo user@server.com:/path/to/\line
+rm -rf ~/temp-repo  # Optional cleanup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Troubleshooting\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Common Issues\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 1.\tx360\tab {\b Repository Locking}:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 # If a backup was interrupted\line
+borg break-lock ~/backup-repo\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 2.\tx360\tab {\b Repository Corruption}:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 borg check --repair ~/backup-repo\par}
+{\pard \ql \f0 \sa180 \li360 \fi-360 3.\tx360\tab {\b Missing Chunks}:\par}
+{\pard \ql \f0 \sa180 \li360 \fi0 \f1 # Check archives for issues\line
+borg check -v --archives-only ~/backup-repo\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Environment Variables\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Useful environment variables for Borg:\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 export BORG_REPO="/path/to/repo"  # Default repository\line
+export BORG_PASSPHRASE="your-passphrase"  # Caution: Only use in secure scripts\line
+export BORG_RSH="ssh -i /path/to/identity_file"  # For custom SSH options\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This document summarizes our exploration of Borg backup systems. For the most up-to-date and comprehensive information, refer to the {\field{\*\fldinst{HYPERLINK "https://borgbackup.readthedocs.io/"}}{\fldrslt{\ul
+official Borg documentation
+}}}
+.\par}

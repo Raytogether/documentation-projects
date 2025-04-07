@@ -1,0 +1,109 @@
+# Cloud Backup Cost Analysis
+
+## Price Comparison (Monthly Rates)
+
+### Wasabi
+#### Base Pricing
+- $5.99/TB/month
+- No egress fees
+- No API request fees
+- 90-day minimum deletion fee
+
+#### Additional Costs
+- Mountain Duck (if used): $39 one-time
+- Cyberduck: Free
+- rclone: Free
+
+#### 1TB Annual Cost
+- Storage only: $71.88/year
+- With Mountain Duck: $110.88 first year, $71.88/year after
+
+### SpiderOak One
+#### Base Pricing
+- 2TB plan: $14.99/month
+- Includes all features
+- No bandwidth limits
+- No extra fees
+
+#### Additional Costs
+- None (all-inclusive)
+
+#### 1TB Annual Cost
+- Monthly: $179.88/year
+- Annual billing discount: $149.00/year
+
+### pCloud
+#### Base Pricing
+- Premium 2TB: $9.99/month
+- Lifetime plans available:
+  - 2TB: $399 one-time
+- Optional encryption: +$4.99/month
+
+#### Additional Costs
+- None (all-inclusive)
+
+#### 1TB Annual Cost
+- Monthly: $119.88/year
+- Annual billing: $99.00/year
+- Lifetime: $399 one-time
+- With encryption: +$59.88/year
+
+### Code42 CrashPlan
+#### Base Pricing
+- Small Business: $9.99/device/month
+- Unlimited storage
+- Minimum 1-year commitment
+- All features included
+
+#### Additional Costs
+- None (all-inclusive)
+
+#### 1TB Annual Cost
+- Per device: $119.88/year
+- Annual billing required
+
+## Reference: Backblaze
+#### Base Pricing
+- $7.00/device/month
+- Unlimited storage
+- Includes external drives
+
+#### Additional Costs
+- None (all-inclusive)
+
+#### 1TB Annual Cost
+- Monthly: $84.00/year
+- Annual billing: $70.00/year
+
+## Cost Analysis
+
+### 1TB Storage Comparison (Annual Cost)
+1. Wasabi: $71.88/year (lowest)
+2. Backblaze: $70.00/year (reference)
+3. pCloud: $99.00/year
+4. CrashPlan: $119.88/year
+5. SpiderOak One: $149.00/year
+
+### Value Considerations
+1. Best Raw Storage Value:
+   - Wasabi: Lowest per-TB cost
+   - But requires additional client software
+
+2. Best All-Inclusive Value:
+   - pCloud: Competitive pricing with native clients
+   - Lifetime option provides long-term savings
+
+3. Best Unlimited Storage Value:
+   - Backblaze: Best unlimited storage pricing
+   - CrashPlan: Higher price but better business features
+
+### Growth Considerations
+1. For 1-2TB Usage:
+   - pCloud lifetime plan most cost-effective long-term
+   - Wasabi most cost-effective short-term
+
+2. For 2TB+ Usage:
+   - CrashPlan/Backblaze unlimited plans become more valuable
+   - Wasabi remains most cost-effective if using own tools
+
+Next Steps: Proceed to Test Setup

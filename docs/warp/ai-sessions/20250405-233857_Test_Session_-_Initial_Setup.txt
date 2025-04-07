@@ -1,0 +1,15 @@
+# Warp AI Session Recording
+# Date: 2025-04-05 23:38:57
+# Title: Test Session - Initial Setup
+# ------------------------------------------
+
+Script started on 2025-04-05 23:38:57-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="128" LINES="38"]
+]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m ls
+[?2004l[0m[01;32mbackup_cleanup.sh[0m       BACKUP_DOCUMENTATION.md  [01;32mbackup_incremental.sh[0m  [01;32mbackup_verify.sh[0m  README.md   [01;32mwarp-ai.sh[0m
+[01;32mbackup-cron-wrapper.sh[0m  [01;32mbackup_full.sh[0m           [01;32mbackup.sh[0m              [01;34mlogs[0m              [01;32mrestore.sh[0m
+]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m echo "I can write some awesome code with ai plus knowledge and it all depends on how you t alk with ai, meaning form your sentences clearer and more precise and the experience gets better and bat[K[Ketter. thanks warp ai.[K agen t."
+[?2004lI can write some awesome code with ai plus knowledge and it all depends on how you talk with ai, meaning form your sentences clearer and more precise and the experience gets better and better. thanks warp ai agent.
+]0;donaldtanner@fedora:~/backup-scripts[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/backup-scripts[0m$[0m exit
+[?2004lexit
+
+Script done on 2025-04-05 23:41:18-05:00 [COMMAND_EXIT_CODE="0"]

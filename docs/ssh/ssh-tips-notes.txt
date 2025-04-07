@@ -1,0 +1,47 @@
+Let's create a configuration entry in the SSH config file with common settings and an easy-to-remember alias.
+Great! I've set up your SSH config file for easier connections. Here's what's been configured:
+
+1. Created ~/.ssh/config with secure permissions (600)
+2. Added a convenient alias 'homeserver' with the following features:
+•  Easy connection using just ssh homeserver
+•  Automatic user and key selection
+•  Connection keepalive settings
+•  Security optimizations
+
+How to use it:
+Instead of typing ssh donald@10.0.0.215, you can now simply use:
+
+ssh homeserver
+
+cat > ~/.ssh/config << 'EOF'
+# Home server configuration
+Host homeserver
+    HostName 10.0.0.215
+    User donald
+    IdentityFile ~/.ssh/id_ed25519
+    Port 22
+    # Performance and security options
+    Compression yes
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    # Security options
+    HashKnownHosts yes
+    StrictHostKeyChecking yes
+EOF
+
+The configuration includes:
+•  Compression: Enables data compression for better performance
+•  ServerAliveInterval: Keeps connections alive by sending a packet every 60 seconds
+•  ServerAliveCountMax: Disconnects after 3 failed keepalive attempts
+•  HashKnownHosts: Increases security by hashing host entries
+•  StrictHostKeyChecking: Enforces strict host key checking
+
+To add more servers, just add new Host sections with different names.
+Example template:
+
+Host nickname
+    HostName actual.hostname.or.ip
+    User username
+    IdentityFile ~/.ssh/specific_key
+
+

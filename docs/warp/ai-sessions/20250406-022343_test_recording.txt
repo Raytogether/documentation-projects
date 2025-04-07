@@ -1,0 +1,24 @@
+# Warp AI Session Recording
+# Date: 2025-04-06 02:23:43
+# Title: test_recording
+# ------------------------------------------
+
+Script started on 2025-04-06 02:23:43-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="128" LINES="35"]
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m ls
+[?2004l[0m[01;32mwarp-ai.sh[0m
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m ll
+[?2004ltotal 16
+-rwxr-xr-x. 1 donaldtanner donaldtanner 14744 Apr  6 02:20 [0m[01;32mwarp-ai.sh[0m
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m ls /
+[?2004l[0m[01;34mafs[0m  [01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mlost+found[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m ls ~
+[?2004l[0m[01;34mApplications[0m         [01;34mborg-cli-test[0m  [01;34mduplicacy-cli-dropbox[0m       [01;34mNotebooks[0m  [01;34mtest-backup[0m                     [01;34mtmp[0m
+[01;34maudio-projects[0m       [01;34mcode[0m           [01;34mExodus-linux-x64[0m            [01;34mPictures[0m   test-backup.key                 [01;34mVideos[0m
+[01;34mbackup-restore-test[0m  [01;34mDesktop[0m        [01;32mgenerate_backup_gpg_key.sh[0m  [01;34mPublic[0m     test-backup.url                 [01;34mwarp-ai-sessions[0m
+[01;34mbackup-scripts[0m       [01;34mDocuments[0m      [01;34mlogs[0m                        [01;34mscripts[0m    [01;32mtest-ssh.sh[0m
+[01;34mbackup-test[0m          [01;34mDownloads[0m      [01;34mmacfanctld[0m                  [01;34mSync[0m       Tilix-Session-Tanner-1.json
+[01;34mbin[0m                  [01;34mDropbox[0m        [01;34mMusic[0m                       [01;34mTemplates[0m  timeshift-gtk.desktop.original
+]0;donaldtanner@fedora:~/code/warp-ai[?2004h[32;1mdonaldtanner@fedora[0m:[32;1m~/code/warp-ai[0m$[0m exit
+[?2004lexit
+
+Script done on 2025-04-06 02:24:01-05:00 [COMMAND_EXIT_CODE="0"]
