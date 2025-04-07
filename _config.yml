@@ -1,0 +1,61 @@
+# Site settings
+title: Documentation Hub
+description: Central hub for various documentation projects
+baseurl: "/documentation-projects"
+url: "https://raytogether.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collection settings
+collections:
+  ssh:
+    output: true
+    permalink: /:collection/:path/
+  warp:
+    output: true
+    permalink: /:collection/:path/
+  learning:
+    output: true
+    permalink: /:collection/:path/
+  backup-strategy:
+    output: true
+    permalink: /:collection/:path/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "ssh"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "warp"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "learning"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "backup-strategy"
+    values:
+      layout: page
+
+# Header pages for navigation
+header_pages:
+  - ssh/index.md
+  - warp/index.md
+  - learning/index.md
+  - backup-strategy/index.md
