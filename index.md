@@ -4,7 +4,7 @@ Welcome to the Documentation Hub. This site hosts various documentation template
 
 ## Available Documentation
 
-- [Backup Configuration](backup-config.md)
+- [Backup Strategy](docs/backup-strategy/)
 - [Documentation Framework](Documentation-Framework.md)
 - [Sample Documentation Project](Sample-Documentation-Project/README.md)
 
