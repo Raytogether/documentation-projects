@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Comprehensive Backup Strategy
+permalink: /backup-strategy/
 description: A detailed guide to our multi-layered backup approach with Duplicity, Borg, and cloud storage solutions
 ---
 
@@ -42,5 +43,5 @@ Modern data protection requires a comprehensive backup strategy that addresses m
 
 By combining these diverse solutions, we create a robust backup strategy that provides quick local recovery, secure off-site storage, and convenient access across multiple devices.
 
-[View the complete backup strategy documentation](/documentation-projects/docs/backup-strategy/README)
+[View the complete backup strategy documentation]({{ site.baseurl }}/backup-strategy/readme/)
 

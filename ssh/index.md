@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: SSH Documentation
+permalink: /ssh/
 description: Guide to SSH configuration, usage, and security best practices
 ---
 
@@ -10,7 +11,7 @@ Welcome to the SSH (Secure Shell) documentation section. This guide provides inf
 
 ## Contents
 
-- [SSH Security Setup Guide](/documentation-projects/ssh/ssh_security_setup_guide.html) - Comprehensive guide to securing your SSH configuration
+- [SSH Security Setup Guide]({{ site.baseurl }}/ssh/ssh_security_setup_guide/) - Comprehensive guide to securing your SSH configuration
 
 ## Overview
 
