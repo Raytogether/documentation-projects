@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Documentation Hub
-description: Centralized repository for documentation templates, frameworks, and project documentation
+description: Centralized repository for documentation templates, frameworks, and project documentation (v1.0.1)
 ---
 
 # Documentation Hub
@@ -36,5 +36,5 @@ This documentation is regularly updated. To ensure you have the latest version:
 
 ---
 
-*Last Updated: April 7, 2025 - 14:48*
+*Last Updated: April 7, 2025 - 15:11*
 
