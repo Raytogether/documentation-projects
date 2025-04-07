@@ -33,26 +33,26 @@ defaults:
 collections:
   warp:
     output: true
-    permalink: /docs/warp/:path/
+    permalink: /warp/:path/
   learning:
     output: true
-    permalink: /docs/learning/:path/
-  backup:
+    permalink: /learning/:path/
+  backup-strategy:
     output: true
-    permalink: /docs/backup-strategy/:path/
+    permalink: /backup-strategy/:path/
   ssh:
     output: true
-    permalink: /docs/ssh/:path/
+    permalink: /ssh/:path/
 
 # Navigation structure
 header_pages:
-  - docs/index.md
-  - docs/backup-strategy/index.md
-  - docs/warp/keyboard-shortcuts/index.md
-  - docs/warp/tips-tricks/index.md
-  - docs/learning/git-journey/index.md
-  - docs/learning/journey-to-code/index.md
-  - docs/ssh/index.md
+  - index.md
+  - backup-strategy/index.md
+  - warp/keyboard-shortcuts/index.md
+  - warp/tips-tricks/index.md
+  - learning/git-journey/index.md
+  - learning/journey-to-code/index.md
+  - ssh/index.md
 
 # Plugins
 plugins:

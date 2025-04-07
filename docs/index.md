@@ -10,33 +10,31 @@ Welcome to my personal documentation hub! This site contains a collection of gui
 
 ## Available Documentation
 
-- <a href="/documentation-projects/docs/backup-strategy/">Backup Strategy</a> - Overall approach to data backup and preservation
-- [Documentation Framework](/documentation-projects/Documentation-Framework.html) - Framework for creating consistent documentation
-- [Sample Documentation Project](/documentation-projects/Sample-Documentation-Project/) - Example documentation structure
+- [Backup Strategy](/documentation-projects/backup-strategy/) - Overall approach to data backup and preservation
 
-## Templates
-
-- [Base Project Template](/documentation-projects/templates/Base-Project-Template.html) - Base template for documentation projects
+<!-- Removed non-existent files:
+- Documentation Framework
+- Sample Documentation Project 
+- Templates section
+-->
 
 ## Warp Documentation
 
 Resources related to the Warp terminal application:
 
-- [Keyboard Shortcuts](/documentation-projects/docs/warp/keyboard-shortcuts/) - Quick reference for Warp terminal keyboard shortcuts
-- [Tips & Tricks](/documentation-projects/docs/warp/tips-tricks/) - Useful techniques and best practices for Warp
-- [AI Sessions](/documentation-projects/docs/warp/ai-sessions/) - Documentation of AI-assisted terminal sessions
-
+- [Keyboard Shortcuts](/documentation-projects/warp/keyboard-shortcuts/) - Quick reference for Warp terminal keyboard shortcuts
+- [Tips & Tricks](/documentation-projects/warp/tips-tricks/) - Useful techniques and best practices for Warp
+- [AI Sessions](/documentation-projects/warp/ai-sessions/) - Documentation of AI-assisted terminal sessions
 ## Learning Resources
 
 Documentation of my learning journey:
 
-- [Git Journey](/documentation-projects/docs/learning/git-journey/) - Learning notes and reference for Git
-- [Journey to Code](/documentation-projects/docs/learning/journey-to-code/) - Progress and learnings in software development
+- [Git Journey](/documentation-projects/learning/git-journey/) - Learning notes and reference for Git
+- [Journey to Code](/documentation-projects/learning/journey-to-code/) - Progress and learnings in software development
 
 ## SSH Guide
 
-- [SSH Documentation](/documentation-projects/docs/ssh/) - Guide to SSH configuration, usage, and best practices
-
+- [SSH Documentation](/documentation-projects/ssh/) - Guide to SSH configuration, usage, and best practices
 ## About This Site
 
 This documentation is maintained in a GitHub repository with automatic versioning and backup systems in place. The documentation follows a standardized structure to ensure consistency and clarity.
