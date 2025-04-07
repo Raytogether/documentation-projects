@@ -42,5 +42,5 @@ Modern data protection requires a comprehensive backup strategy that addresses m
 
 By combining these diverse solutions, we create a robust backup strategy that provides quick local recovery, secure off-site storage, and convenient access across multiple devices.
 
-[View the complete backup strategy documentation](./backup-strategy.html)
+[View the complete backup strategy documentation](./content.html)
 
