@@ -1,16 +1,22 @@
+---
+layout: default
+title: Documentation Hub
+description: Centralized repository for documentation templates, frameworks, and project documentation
+---
+
 # Documentation Hub
 
 Welcome to the Documentation Hub. This site hosts various documentation templates, frameworks, and project documentation.
 
 ## Available Documentation
 
-- [Backup Strategy](docs/backup-strategy/)
-- [Documentation Framework](Documentation-Framework.md)
-- [Sample Documentation Project](Sample-Documentation-Project/README.md)
+- [Backup Strategy](/documentation-projects/docs/backup-strategy/)
+- [Documentation Framework](/documentation-projects/Documentation-Framework.html)
+- [Sample Documentation Project](/documentation-projects/Sample-Documentation-Project/)
 
 ## Templates
 
-- [Base Project Template](templates/Base-Project-Template.md)
+- [Base Project Template](/documentation-projects/templates/Base-Project-Template.html)
 
 ## About This Site
 

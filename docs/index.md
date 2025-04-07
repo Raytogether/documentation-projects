@@ -8,6 +8,12 @@ description: A central repository for all my documentation projects
 
 Welcome to my personal documentation hub! This site contains a collection of guides, notes, and reference materials that I've created and organized for easy access. Browse through the categories below to find documentation on various topics.
 
+## Available Documentation
+
+- [Backup Strategy](./backup-strategy/) - Overall approach to data backup and preservation
+- [Documentation Framework](/documentation-projects/Documentation-Framework.html) - Framework for creating consistent documentation
+- [Sample Documentation Project](/documentation-projects/Sample-Documentation-Project/) - Example documentation structure
+
 ## Warp Documentation
 
 Resources related to the Warp terminal application:
@@ -15,12 +21,6 @@ Resources related to the Warp terminal application:
 - [Keyboard Shortcuts](./warp/keyboard-shortcuts/) - Quick reference for Warp terminal keyboard shortcuts
 - [Tips & Tricks](./warp/tips-tricks/) - Useful techniques and best practices for Warp
 - [AI Sessions](./warp/ai-sessions/) - Documentation of AI-assisted terminal sessions
-
-## Backup Solutions
-
-Information about backup strategies and tools:
-
-- [Backup Strategy](./backup-strategy/) - Overall approach to data backup and preservation
 
 ## Learning Resources
 
