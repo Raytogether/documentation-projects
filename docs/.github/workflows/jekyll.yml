@@ -1,0 +1,62 @@
+name: Jekyll Build and Deploy
+
+on:
+  push:
+    branches: [ gh-pages, main ]
+  pull_request:
+    branches: [ gh-pages, main ]
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 💎 Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: 🔒 Security scan for vulnerable dependencies
+        run: |
+          gem install bundler-audit
+          bundle audit check --update
+
+      - name: 🧪 Build and test
+        run: |
+          bundle exec jekyll build
+          bundle exec htmlproofer ./_site --disable-external
+
+      - name: 📦 Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: site-build
+          path: _site/
+          retention-days: 5
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/gh-pages' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📂 Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: ⬇️ Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: site-build
+          path: _site
+      
+      - name: 🚀 Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to
+          folder: _site    # The folder the action should deploy
+          clean: true      # Automatically remove deleted files
+
