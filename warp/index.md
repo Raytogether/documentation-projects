@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Warp Terminal Documentation
+permalink: /warp/
 description: Resources and guides for using the Warp terminal application
 ---
 
@@ -10,9 +11,9 @@ Welcome to the Warp terminal documentation section. This area contains resources
 
 ## Contents
 
-- [Keyboard Shortcuts](/documentation-projects/warp/keyboard-shortcuts/) - Quick reference for Warp terminal keyboard shortcuts
-- [Tips & Tricks](/documentation-projects/warp/tips-tricks/) - Useful techniques and best practices for Warp
-- [AI Sessions](/documentation-projects/warp/ai-sessions/) - Documentation of AI-assisted terminal sessions
+- [Keyboard Shortcuts]({{ site.baseurl }}/warp/keyboard-shortcuts/) - Quick reference for Warp terminal keyboard shortcuts
+- [Tips & Tricks]({{ site.baseurl }}/warp/tips-tricks/) - Useful techniques and best practices for Warp
+- [AI Sessions]({{ site.baseurl }}/warp/ai-sessions/) - Documentation of AI-assisted terminal sessions
 
 ## Overview
 

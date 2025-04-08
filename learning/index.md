@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Learning Resources
+permalink: /learning/
 description: Documentation of my learning journey in software development and related technologies
 ---
 
@@ -10,8 +11,8 @@ Welcome to the Learning Resources section. This area documents my personal learn
 
 ## Contents
 
-- [Git Journey](/documentation-projects/learning/git-journey/) - Learning notes and reference for Git version control
-- [Journey to Code](/documentation-projects/learning/journey-to-code/) - Progress and learnings in software development
+- [Git Journey]({{ site.baseurl }}/learning/git-journey/) - Learning notes and reference for Git version control
+- [Journey to Code]({{ site.baseurl }}/learning/journey-to-code/) - Progress and learnings in software development
 
 ## Overview
 

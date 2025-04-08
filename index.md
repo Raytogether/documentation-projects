@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Documentation Hub
 description: A central repository for all my documentation projects (v1.0.1)
 ---
@@ -10,31 +10,22 @@ Welcome to my personal documentation hub! This site contains a collection of gui
 
 ## Available Documentation
 
-- [Backup Strategy](/documentation-projects/backup-strategy/) - Overall approach to data backup and preservation
-
-<!-- Removed non-existent files:
-- Documentation Framework
-- Sample Documentation Project 
-- Templates section
--->
+- [SSH Documentation]({{ site.baseurl }}/ssh/) - Guide to SSH configuration, usage, and best practices
+- [Backup Strategy]({{ site.baseurl }}/backup-strategy/) - Overall approach to data backup and preservation
 
 ## Warp Documentation
 
 Resources related to the Warp terminal application:
 
-- [Keyboard Shortcuts](/documentation-projects/warp/keyboard-shortcuts/) - Quick reference for Warp terminal keyboard shortcuts
-- [Tips & Tricks](/documentation-projects/warp/tips-tricks/) - Useful techniques and best practices for Warp
-- [AI Sessions](/documentation-projects/warp/ai-sessions/) - Documentation of AI-assisted terminal sessions
+- [Keyboard Shortcuts]({{ site.baseurl }}/warp/keyboard-shortcuts/) - Quick reference for Warp terminal keyboard shortcuts
+- [Tips & Tricks]({{ site.baseurl }}/warp/tips-tricks/) - Useful techniques and best practices for Warp
+- [AI Sessions]({{ site.baseurl }}/warp/ai-sessions/) - Documentation of AI-assisted terminal sessions
+
 ## Learning Resources
 
-Documentation of my learning journey:
+- [Git Journey]({{ site.baseurl }}/learning/git-journey/) - Learning notes and reference for Git
+- [Journey to Code]({{ site.baseurl }}/learning/journey-to-code/) - Progress and learnings in software development
 
-- [Git Journey](/documentation-projects/learning/git-journey/) - Learning notes and reference for Git
-- [Journey to Code](/documentation-projects/learning/journey-to-code/) - Progress and learnings in software development
-
-## SSH Guide
-
-- [SSH Documentation](/documentation-projects/ssh/) - Guide to SSH configuration, usage, and best practices
 ## About This Site
 
 This documentation is maintained in a GitHub repository with automatic versioning and backup systems in place. The documentation follows a standardized structure to ensure consistency and clarity.
