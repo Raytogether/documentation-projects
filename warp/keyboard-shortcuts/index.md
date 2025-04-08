@@ -33,13 +33,13 @@ description: Comprehensive guide to keyboard shortcuts for the Warp terminal app
    - [Theme Controls](#theme-controls)
 8. [Quick Reference](#quick-reference)
 
-## Introduction
+## Introduction {#introduction}
 
 Warp is a modern terminal built for productivity, and mastering its keyboard shortcuts can significantly enhance your workflow. This guide provides a comprehensive reference for all keyboard shortcuts available in Warp, organized by function.
 
-## Navigation Shortcuts
+## Navigation Shortcuts {#navigation-shortcuts}
 
-### Cursor Movement
+### Cursor Movement {#cursor-movement}
 
 | Shortcut | Action |
 |----------|--------|
@@ -50,7 +50,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Ctrl + B` | Move cursor one character backward |
 | `Ctrl + F` | Move cursor one character forward |
 
-### Command History
+### Command History {#command-history}
 
 | Shortcut | Action |
 |----------|--------|
@@ -59,7 +59,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Ctrl + N` | Next command in history |
 | `Alt + .` | Insert last argument of previous command |
 
-### Terminal Navigation
+### Terminal Navigation {#terminal-navigation}
 
 | Shortcut | Action |
 |----------|--------|
@@ -70,9 +70,9 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Page Up` | Scroll one page up |
 | `Cmd + Page Down` | Scroll one page down |
 
-## Text Editing Shortcuts
+## Text Editing Shortcuts {#text-editing-shortcuts}
 
-### Selection
+### Selection {#selection}
 
 | Shortcut | Action |
 |----------|--------|
@@ -82,7 +82,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Shift + Alt + ←` | Select one word left |
 | `Cmd + A` | Select all text in current prompt |
 
-### Copy/Paste
+### Copy/Paste {#copypaste}
 
 | Shortcut | Action |
 |----------|--------|
@@ -93,7 +93,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Ctrl + K` | Cut text from cursor to end of line |
 | `Ctrl + Y` | Paste text cut by previous command |
 
-### Deletion
+### Deletion {#deletion}
 
 | Shortcut | Action |
 |----------|--------|
@@ -104,9 +104,9 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Ctrl + U` | Delete from cursor to beginning of line |
 | `Ctrl + K` | Delete from cursor to end of line |
 
-## Tab & Window Management
+## Tab & Window Management {#tab--window-management}
 
-### Tab Controls
+### Tab Controls {#tab-controls}
 
 | Shortcut | Action |
 |----------|--------|
@@ -116,7 +116,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Shift + [` | Previous tab |
 | `Cmd + 1-9` | Switch to tab by number |
 
-### Window Controls
+### Window Controls {#window-controls}
 
 | Shortcut | Action |
 |----------|--------|
@@ -125,7 +125,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Q` | Quit Warp |
 | `Cmd + M` | Minimize window |
 
-### Split Panes
+### Split Panes {#split-panes}
 
 | Shortcut | Action |
 |----------|--------|
@@ -134,9 +134,9 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Shift + Arrow` | Navigate between panes |
 | `Cmd + W` | Close current pane |
 
-## Command Blocks
+## Command Blocks {#command-blocks}
 
-### Block Selection
+### Block Selection {#block-selection}
 
 | Shortcut | Action |
 |----------|--------|
@@ -144,7 +144,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Alt + Click` | Select specific block |
 | `Cmd + Shift + A` | Select all blocks |
 
-### Block Manipulation
+### Block Manipulation {#block-manipulation}
 
 | Shortcut | Action |
 |----------|--------|
@@ -153,9 +153,9 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Delete` | Clear selected block |
 | `Cmd + /` | Toggle block comment |
 
-## Warp AI Commands
+## Warp AI Commands {#warp-ai-commands}
 
-### AI Completion
+### AI Completion {#ai-completion}
 
 | Shortcut | Action |
 |----------|--------|
@@ -164,7 +164,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `→` | Accept word by word |
 | `Alt + ]` | Cycle through AI suggestions |
 
-### AI Assistance
+### AI Assistance {#ai-assistance}
 
 | Shortcut | Action |
 |----------|--------|
@@ -173,9 +173,9 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + \` | Toggle AI assistant panel |
 | `Cmd + Shift + R` | Request AI explanation of command |
 
-## Customization
+## Customization {#customization}
 
-### Settings Access
+### Settings Access {#settings-access}
 
 | Shortcut | Action |
 |----------|--------|
@@ -183,7 +183,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + J` | Toggle command palette |
 | `Cmd + Shift + P` | Open actions menu |
 
-### Theme Controls
+### Theme Controls {#theme-controls}
 
 | Shortcut | Action |
 |----------|--------|
@@ -193,9 +193,9 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + -` | Decrease font size |
 | `Cmd + 0` | Reset font size |
 
-## Quick Reference
+## Quick Reference {#quick-reference}
 
-### Most Essential Shortcuts
+### Most Essential Shortcuts {#most-essential-shortcuts}
 
 | Shortcut | Action |
 |----------|--------|
@@ -212,7 +212,7 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `@` | Trigger AI commands |
 | `Cmd + J` | Command palette |
 
-### Custom Shortcut Configuration
+### Custom Shortcut Configuration {#custom-shortcut-configuration}
 
 You can customize keyboard shortcuts in Warp by:
 1. Opening Settings (`Cmd + ,`)
