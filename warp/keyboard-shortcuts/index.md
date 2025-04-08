@@ -3,6 +3,9 @@ layout: page
 title: Warp Keyboard Shortcuts
 permalink: /warp/keyboard-shortcuts/
 description: Comprehensive guide to keyboard shortcuts for the Warp terminal application
+author: Donald Tanner
+last_updated: 2025-04-07
+toc: true
 ---
 
 # Warp Keyboard Shortcuts
@@ -37,6 +40,10 @@ description: Comprehensive guide to keyboard shortcuts for the Warp terminal app
 
 Warp is a modern terminal built for productivity, and mastering its keyboard shortcuts can significantly enhance your workflow. This guide provides a comprehensive reference for all keyboard shortcuts available in Warp, organized by function.
 
+[Back to Top](#table-of-contents)
+
+---
+
 ## Navigation Shortcuts {#navigation-shortcuts}
 
 ### Cursor Movement {#cursor-movement}
@@ -67,8 +74,12 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + K` | Clear terminal buffer |
 | `Cmd + ↑` | Scroll up |
 | `Cmd + ↓` | Scroll down |
-| `Cmd + Page Up` | Scroll one page up |
-| `Cmd + Page Down` | Scroll one page down |
+|| `Cmd + Page Up` | Scroll one page up |
+|| `Cmd + Page Down` | Scroll one page down |
+
+[Back to Top](#table-of-contents)
+
+---
 
 ## Text Editing Shortcuts {#text-editing-shortcuts}
 
@@ -101,8 +112,12 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Ctrl + D` | Delete character under cursor |
 | `Alt + D` | Delete word after cursor |
 | `Ctrl + W` | Delete word before cursor |
-| `Ctrl + U` | Delete from cursor to beginning of line |
-| `Ctrl + K` | Delete from cursor to end of line |
+|| `Ctrl + U` | Delete from cursor to beginning of line |
+|| `Ctrl + K` | Delete from cursor to end of line |
+
+[Back to Top](#table-of-contents)
+
+---
 
 ## Tab & Window Management {#tab--window-management}
 
@@ -131,8 +146,12 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 |----------|--------|
 | `Cmd + D` | Split pane vertically |
 | `Cmd + Shift + D` | Split pane horizontally |
-| `Cmd + Shift + Arrow` | Navigate between panes |
-| `Cmd + W` | Close current pane |
+|| `Cmd + Shift + Arrow` | Navigate between panes |
+|| `Cmd + W` | Close current pane |
+
+[Back to Top](#table-of-contents)
+
+---
 
 ## Command Blocks {#command-blocks}
 
@@ -151,7 +170,11 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Enter` | Rerun selected block |
 | `Cmd + Shift + Enter` | Edit and run selected block |
 | `Cmd + Delete` | Clear selected block |
-| `Cmd + /` | Toggle block comment |
+|| `Cmd + /` | Toggle block comment |
+
+[Back to Top](#table-of-contents)
+
+---
 
 ## Warp AI Commands {#warp-ai-commands}
 
@@ -171,7 +194,11 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Shift + L` | Open Warp AI command palette |
 | `@` | Trigger AI commands menu |
 | `Cmd + \` | Toggle AI assistant panel |
-| `Cmd + Shift + R` | Request AI explanation of command |
+|| `Cmd + Shift + R` | Request AI explanation of command |
+
+[Back to Top](#table-of-contents)
+
+---
 
 ## Customization {#customization}
 
@@ -190,8 +217,12 @@ Warp is a modern terminal built for productivity, and mastering its keyboard sho
 | `Cmd + Shift + T` | Toggle light/dark theme |
 | `F11` | Toggle full screen |
 | `Cmd + +` | Increase font size |
-| `Cmd + -` | Decrease font size |
-| `Cmd + 0` | Reset font size |
+|| `Cmd + -` | Decrease font size |
+|| `Cmd + 0` | Reset font size |
+
+[Back to Top](#table-of-contents)
+
+---
 
 ## Quick Reference {#quick-reference}
 
@@ -218,6 +249,8 @@ You can customize keyboard shortcuts in Warp by:
 1. Opening Settings (`Cmd + ,`)
 2. Navigating to Keyboard Shortcuts
 3. Editing the existing shortcuts or adding new ones
+
+[Back to Top](#table-of-contents)
 
 For more detailed documentation, visit the [Warp Docs](https://docs.warp.dev/).
 
