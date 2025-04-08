@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="page-content">
+  {% if page.title %}
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% endif %}
+  
+  {% if page.collection %}
+  <p class="collection-name">
+    <a href="{{ site.baseurl }}/{{ page.collection }}/">Back to {{ page.collection | capitalize | replace: '-', ' ' }}</a>
+  </p>
+  {% endif %}
+
+  <div class="page-body">
+    {{ content }}
+  </div>
+
+  {% if page.collection %}
+  <div class="collection-navigation">
+    <h3>More in this section</h3>
+    <ul>
+      {% assign collection_items = site[page.collection] | sort: 'order' %}
+      {% for item in collection_items %}
+        {% if item.title %}
+        <li>
+          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+
+<style>
+  .page-title {
+    color: #159957;
+    margin-bottom: 1rem;
+  }
+  
+  .collection-name {
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+  
+  .collection-name a {
+    color: #1e6bb8;
+    text-decoration: none;
+  }
+  
+  .collection-name a:hover {
+    text-decoration: underline;
+  }
+  
+  .collection-navigation {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eff0f1;
+  }
+  
+  .collection-navigation h3 {
+    color: #159957;
+  }
+  
+  .collection-navigation ul {
+    padding-left: 20px;
+  }
+  
+  .collection-navigation li {
+    margin-bottom: 0.5rem;
+  }
+</style>
+
